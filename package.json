@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"nx serve dashboardv1\" \"nx serve edufluxv1\""
+    "dev": "concurrently \"nx serve dashboardv1\" \"nx serve edufluxv1\"",
+    "build": "nx build dashboardv1"
   },
   "private": true,
   "dependencies": {
