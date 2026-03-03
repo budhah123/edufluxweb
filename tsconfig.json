@@ -1,0 +1,94 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/api"
+    },
+    {
+      "path": "./apps/shop-e2e"
+    },
+    {
+      "path": "./apps/shop"
+    },
+    {
+      "path": "./libs/api/products"
+    },
+    {
+      "path": "./libs/shared/models"
+    },
+    {
+      "path": "./libs/shop/data"
+    },
+    {
+      "path": "./libs/shop/feature-product-detail"
+    },
+    {
+      "path": "./libs/shop/feature-products"
+    },
+    {
+      "path": "./libs/shop/shared-ui"
+    },
+    {
+      "path": "./libs/shared/test-utils"
+    },
+    {
+      "path": "./dashboardsv1-e2e"
+    },
+    {
+      "path": "./dashboardsv1"
+    },
+    {
+      "path": "./dashboardsv1-e2e"
+    },
+    {
+      "path": "./edufluxv1-e2e"
+    },
+    {
+      "path": "./edufluxv1"
+    },
+    {
+      "path": "./apps-e2e"
+    },
+    {
+      "path": "./apps"
+    },
+    {
+      "path": "./apps-e2e"
+    },
+    {
+      "path": "./apps-e2e"
+    },
+    {
+      "path": "./apps/myapp-e2e"
+    },
+    {
+      "path": "./apps/myapp"
+    },
+    {
+      "path": "./apps-e2e"
+    },
+    {
+      "path": "./dashboardv1-e2e"
+    },
+    {
+      "path": "./dashboardv1"
+    },
+    {
+      "path": "./apps/dashboardv1-e2e"
+    },
+    {
+      "path": "./apps/dashboardv1"
+    },
+    {
+      "path": "./apps/edufluxv1-e2e"
+    },
+    {
+      "path": "./apps/edufluxv1"
+    },
+    {
+      "path": "./apps/dashboardv1-e2e"
+    }
+  ]
+}

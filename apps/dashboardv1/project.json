@@ -1,0 +1,24 @@
+{
+  "name": "dashboardv1",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/dashboardv1/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "dashboardv1:build",
+        "dev": true,
+        "port": 3000
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "root": "apps/dashboardv1",
+        "outputPath": "dist/apps/dashboardv1"
+      }
+    }
+  }
+}

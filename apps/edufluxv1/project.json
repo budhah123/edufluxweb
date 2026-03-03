@@ -1,0 +1,24 @@
+{
+  "name": "edufluxv1",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/edufluxv1/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "edufluxv1:build",
+        "dev": true,
+        "port": 3500
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "root": "apps/edufluxv1",
+        "outputPath": "dist/apps/edufluxv1"
+      }
+    }
+  }
+}
