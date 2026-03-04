@@ -1,0 +1,62 @@
+﻿
+[2m> [22m[2mnx run[22m edufluxv1:build
+
+node.exe : 
+[baseline-browser-mapping] 
+The data in this module is 
+over two months old.  To 
+ensure accurate Baseline 
+data, please update: `npm i ba
+seline-browser-mapping@latest 
+-D`
+At C:\Program 
+Files\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS 
+$args
++   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: ([baseline  
+  -brows...ping@latest -D`:   
+ String) [], RemoteExcepti    
+on
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+   [1m[38;2;173;127;168mΓû▓ Next.js 16.0.11[39m[22m (Turbopack)
+   - Environments: .env.local, .env
+ [37m[1m [22m[39m Running TypeScript ...
+ [33m[1mΓÜá[22m[39m 
+TypeScript project references 
+are not fully supported. 
+Attempting to build in 
+incremental mode.
+[31mFailed to compile.
+[39m
+[31m[1mType 
+error[22m[39m: File 'D:/Sky-
+Trips/eduflux/dist/apps/eduflu
+xv1/.next/types/validator.ts' 
+is not under 'rootDir' 'D:/Sky
+-Trips/eduflux/apps/edufluxv1/
+src'. 'rootDir' is expected 
+to contain all source files.
+  The file is in the program 
+because:
+    Root file specified for 
+compilation
+Next.js build worker exited 
+with code: 1 and signal: null
+[1m[31mBuild process exited 
+due to code 1  [39m[22m
+
+[2m[31m[39m[22m
+
+[7m[1m[31m NX [39m[22m[27m  [31mRunning target [1mbuild[22m for project edufluxv1 failed[39m
+
+[2mFailed tasks:[22m
+
+[2m-[22m edufluxv1:build
+
+[2mHint: run the command with[22m --verbose [2mfor more details.[22m
+
