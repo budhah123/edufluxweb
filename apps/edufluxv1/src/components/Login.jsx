@@ -55,6 +55,11 @@ export default function Login() {
       setIsLoading(false);
     }
   };
+  const handleGoogleLogin = () => {
+    setIsLoading(true);
+    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL || '').replace(/\/$/, '');
+    window.location.href = `${baseUrl}/auth/google/login`;
+  };
 
   return (
     <>
@@ -224,7 +229,9 @@ export default function Login() {
                   <button
                     id="sso-google"
                     type="button"
-                    className="flex items-center justify-center gap-2 border border-gray-200 dark:border-gray-700 rounded-lg py-2.5 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                    onClick={handleGoogleLogin}
+                    disabled={isLoading}
+                    className="flex items-center justify-center gap-2 border border-gray-200 dark:border-gray-700 rounded-lg py-2.5 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
