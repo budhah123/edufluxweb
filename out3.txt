@@ -1,0 +1,25 @@
+
+[2m> [22m[2mnx run[22m edufluxv1:serve
+
+ [31m[1m⨯[22m[39m Failed to start server
+D:\Sky-Trips\eduflux\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+D:\Sky-Trips\eduflux\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+Error: listen EADDRINUSE: address already in use :::3500
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3500)
+    at new Promise (<anonymous>) {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-4091[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m3500[39m
+}
+[?25h
+[7m[1m[31m NX [39m[22m[27m  [31mNext.js app exited with code 1[39m
+Pass --verbose to see the stacktrace.
+Task "edufluxv1:serve" is continuous but exited with code 1
+
+[2m[32m[39m[22m
+
+[7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mserve[22m for project edufluxv1[39m
+
+

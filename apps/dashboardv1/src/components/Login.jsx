@@ -67,15 +67,7 @@ export default function Login() {
         <title>Login - Eduflux</title>
         <meta
           name="description"
-          content="Login to the Eduflux student portal to access your courses, assignments, and more."
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
+          content="Login to the Eduflux admin portal to manage users, courses, and platform settings."
         />
       </Head>
 
@@ -117,7 +109,7 @@ export default function Login() {
                   Welcome Back
                 </h1>
                 <p className="text-[#556591] dark:text-gray-400 mt-2">
-                  Enter your credentials to access your student portal
+                  Enter your credentials to access the admin portal
                 </p>
               </div>
 
@@ -144,7 +136,7 @@ export default function Login() {
                     id="email"
                     type="email"
                     autoComplete="email"
-                    placeholder="e.g. student@eduflux.edu"
+                    placeholder="e.g. admin@eduflux.edu"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     disabled={isLoading}

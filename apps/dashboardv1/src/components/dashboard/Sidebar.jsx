@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 
 const navLinks = [
   { href: '/dashboard', icon: 'dashboard', label: 'Dashboard' },
-  { href: '/dashboard/assignments', icon: 'assignment', label: 'My Assignments' },
-  { href: '/dashboard/grades', icon: 'grade', label: 'Grades' },
-  { href: '/dashboard/calendar', icon: 'calendar_today', label: 'Calendar' },
+  { href: '/dashboard/users', icon: 'group', label: 'User Management' },
+  { href: '/dashboard/courses', icon: 'school', label: 'Course Management' },
+  { href: '/dashboard/reports', icon: 'analytics', label: 'System Reports' },
 ];
 
 export default function Sidebar() {
@@ -22,7 +22,7 @@ export default function Sidebar() {
           </div>
           <div className="flex flex-col">
             <h1 className="text-[#120f1a] dark:text-white text-lg font-bold leading-none">Eduflux</h1>
-            <p className="text-[#655591] dark:text-[#a397c5] text-xs font-normal">Student Portal</p>
+            <p className="text-[#655591] dark:text-[#a397c5] text-xs font-normal">Admin Portal</p>
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-export default function TopNav({ userName = 'Alex Johnson', studentId = '2024883' }) {
+export default function TopNav({ userName = 'Alex Johnson', adminId = 'ADM-2024883' }) {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,7 +30,7 @@ export default function TopNav({ userName = 'Alex Johnson', studentId = '2024883
             <input
               type="text"
               className="flex w-full min-w-0 flex-1 bg-transparent border-none focus:ring-0 text-[#120f1a] dark:text-white placeholder:text-[#655591] px-3 text-sm font-normal"
-              placeholder="Search for assignments or courses..."
+              placeholder="Search for students, instructors, or system logs..."
             />
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function TopNav({ userName = 'Alex Johnson', studentId = '2024883
         <div className="relative flex items-center gap-3">
           <div className="text-right hidden sm:block">
             <p className="text-sm font-bold dark:text-white">{userName}</p>
-            <p className="text-xs text-[#655591] dark:text-[#a397c5]">ID: {studentId}</p>
+            <p className="text-xs text-[#655591] dark:text-[#a397c5]">ID: {adminId}</p>
           </div>
 
           {/* Avatar — clicking toggles logout menu */}
